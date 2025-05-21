@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <p id="logo"><span>P</span>Henry</p>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Experiences</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div id="hero-section">
+          <div class="header-text">
+            <p>JUNIOR WEB DEVELOPER</p>
+            <h1>Hi, I'm <span>Precious</span><br />Henry From Ghana</h1>
+            <a
+              href="https://drive.google.com/file/d/17WJjI_xIi2amjrhOJtgFvVGvcbAeVKK4/view?usp=sharing"
+              target="_blank"
+              ><button class="home-button">Download CV</button></a
+            >
+          </div>
+          <img src="/Assets/xena.png" alt="Image" id="hero-img" />
+        </div>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="/Assets/xena-2.png" alt="User Image" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I am detail-oriented professional with strong foundation in
+              administration and frontend development.Adept at analyzing
+              information for accuracy,providing clear feedback,ensuring
+              highquality standards.Passionate about contributing to innovative
+              projects. I work with front-end(like HTML, CSS, AND Javascript)
+              and sometimes back-end technologies under the guidance of senior
+              developers.My task includes fixing bugs,adding new features,
+              updating web content, and learning best coding practices.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Web Development</span><br />Designing Web interfaces
+                </li>
+                <li>
+                  <span>Mobile App Development</span><br />Building Android/iOS
+                  apps
+                </li>
+                <li><span>Web Applications</span><br />Building Web apps</li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2024-2025</span><br />Web Developer Intern at Mest
+                </li>
+                <li><span>2023-2024</span><br />Intern at Hotels and Deals</li>
+                <li><span>2022-2023</span><br />Web Developer at Technov8t</li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>Web Development</span><br />MBA from KNUST</li>
+                <li><span>Web Development</span><br />MBA from KNUST</li>
+                <li><span>2020</span><br />Bsc from KNUST</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- -----------Project-------------- -->
+    <div id="project-item">
+      <div class="container">
+        <h1 class="title">My Project</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="/Assets/first project.png" />
+          </div>
+          <div class="work">
+            <img src="/Assets/second project.png" />
+          </div>
+          <!-- <div class="work">
+            <img src="/Assets/work-3.png" />
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>precioushenryc@gmail.com
+            </p>
+            <p><i class="fa-solid fa-square-phone"></i>0555247853</p>
+            <div class="icons">
+              <a href="https://facebook.com/"
+                ><i class="fa-brands fa-square-facebook"></i
+              ></a>
+              <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                id=""
+                rows="5"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="home-button">Submit Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (let tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (let tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+  </body>
+</html>
